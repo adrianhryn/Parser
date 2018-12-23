@@ -25,10 +25,7 @@ public class City {
     private double area;
 
     private static final int INFO_SIZE = 6;
-
-
-
-
+    
     public static City parse(Element city) throws IOException {
         Elements info = city.select("td");
         if (info.size() == INFO_SIZE) {
@@ -73,7 +70,5 @@ public class City {
                 this.getAdministrativeArea(), this.getNumberOfCitizens(), this.getYearOfFound(), this.getArea(),
                 this.getCoordinates());
         return cityInfo;
-
     }
-
 }
